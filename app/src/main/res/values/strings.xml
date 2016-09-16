@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">智慧北京</string>
+    <string name="start_play">开始体验</string>
+    <string name="content_first_page">首页</string>
+    <string name="content_news_center">新闻中心</string>
+    <string name="content_wisdom_service">智慧服务</string>
+    <string name="content_govaffairs">政务</string>
+    <string name="content_setting">设置</string>
+    <string name="pull_refresh">下拉刷新</string>
+    <string name="loading_refresh">加载中...</string>
+</resources>

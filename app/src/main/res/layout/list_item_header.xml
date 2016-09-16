@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.ty.wisdomcity.ui.TopNewsViewPager
+            android:id="@+id/vp_tab_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#a000"
+            android:layout_gravity="bottom"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_tab_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/cpi_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                app:fillColor="#f00"
+                app:pageColor="#cccccc"
+                app:radius="5dp"
+                app:strokeWidth="0dp" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

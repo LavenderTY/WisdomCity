@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ty.wisdomcity.ui.NoScrollViewPager
+        android:id="@+id/nvp_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.ty.wisdomcity.ui.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_bottom_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#817878"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rad_home"
+            style="@style/RadioButPress"
+            android:checked="true"
+            android:drawableTop="@drawable/rad_home_selector"
+            android:text="@string/content_first_page"
+            android:textColor="@color/txt_content_selector" />
+        <!--默认第一个选中-->
+        <RadioButton
+            android:id="@+id/rad_news_center"
+            style="@style/RadioButPress"
+            android:drawableTop="@drawable/rad_newscenter_selector"
+            android:text="@string/content_news_center"
+            android:textColor="@color/txt_content_selector" />
+
+        <RadioButton
+            android:id="@+id/rad_wisdom_service"
+            style="@style/RadioButPress"
+            android:drawableTop="@drawable/rad_smartservice_selector"
+            android:text="@string/content_wisdom_service"
+            android:textColor="@color/txt_content_selector" />
+
+        <RadioButton
+            android:id="@+id/rad_govaffairs"
+            style="@style/RadioButPress"
+            android:drawableTop="@drawable/rad_govaffairs_selector"
+            android:text="@string/content_govaffairs"
+            android:textColor="@color/txt_content_selector" />
+
+        <RadioButton
+            android:id="@+id/rad_setting"
+            style="@style/RadioButPress"
+            android:drawableTop="@drawable/rad_setting_selector"
+            android:text="@string/content_setting"
+            android:textColor="@color/txt_content_selector" />
+    </RadioGroup>
+</LinearLayout>
